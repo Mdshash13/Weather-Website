@@ -71,7 +71,7 @@ function weatherDetails(info){
         weatherPart.querySelector(".temp .numb-2").innerText = Math.floor(feels_like);
         weatherPart.querySelector(".humidity span").innerText = `${humidity}%`;
         infoTxt.classList.remove("pending", "error");
-        infoTxt.innerText = "";
+        infoTxt.innerText = "Please enter a valid city name";
         inputField.value = "";
         wrapper.classList.add("active");
     }
